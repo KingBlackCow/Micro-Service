@@ -67,6 +67,6 @@ public class UserServiceImpl implements UserService {
 
         return new User(userEntity.getUserId(),
                 userEntity.getEncryptedPwd(),
-                true,true,true,true,new ArrayList<>())
+                true,true,true,true,new ArrayList<>());
     }
 }
