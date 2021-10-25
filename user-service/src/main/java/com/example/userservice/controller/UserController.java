@@ -16,6 +16,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class UserController {
     }
 
     @GetMapping("/welcome")
-    public String welcome() {
+    public String welcome(HttpServletRequest request) {
         //return env.getProperty("greeting.message");
         return greeting.getMessage();
     }
